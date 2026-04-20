@@ -2,5 +2,5 @@ SQL - Structured Query Language is used to query, manipulate, and transform data
 
 SELECT is used to select columns from the database with all the rows in it.
 
-SELECT *               //Selects all the rows from the database
+SELECT *                           //Selects all the rows from the database
 FROM TABLE TABLENAME 
