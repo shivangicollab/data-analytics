@@ -1,13 +1,13 @@
 SQL - Structured Query Language is used to query, manipulate, and transform data from a relational database
 
-SELECT is used to select columns from the database with all the rows in it.
+**SELECT** is used to select columns from the database with all the rows in it.
 
 
-SELECT *                           //Selects all the rows from the database
+SELECT *                          //Selects all the rows from the database
 FROM TABLE TABLENAME 
 
 
-WHERE is used to filter out data based on some criteria.
+**WHERE** is used to filter out data based on some criteria.
 Conditions can have
 - operators like <=,>=,==,!=,<,>
 - BETWEEN … AND …          Example - col_name BETWEEN 1.5 AND 10.5
@@ -25,4 +25,41 @@ NOT LIKE	    Case insensitive exact string inequality comparison	               
 _	            Used anywhere in a string to match a single character (only with LIKE or NOT LIKE)	                                  col_name LIKE "AN_ (matches "AND", but not "AN")
 IN (…)	      String exists in a list	                                                                                              col_name IN ("A", "B", "C")
 NOT IN (…)	  String does not exist in a list	                                                                                      col_name NOT IN ("D", "E", "F")
+
+
+**DISTINCT** used to remove duplicates
+
+**ORDER BY** column ASC/DESC - used to sort data alphabetically in aescending or descending order
+LIMIT AND OFFSET : LIMIT will reduce the number of rows to return, and the optional OFFSET will specify where to begin counting the number rows from.
+
+
+**INNER JOIN** - matches rows from the first table and the second table which have the same key
+Example - SELECT column, another_table_column, …
+          FROM mytable
+          INNER JOIN another_table 
+             ON mytable.id = another_table.id
+          WHERE condition(s)
+          ORDER BY column, … ASC/DESC
+          LIMIT num_limit OFFSET num_offset;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
