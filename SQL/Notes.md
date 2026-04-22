@@ -42,10 +42,56 @@ Example - SELECT column, another_table_column, …
           ORDER BY column, … ASC/DESC
           LIMIT num_limit OFFSET num_offset;
 
+EXAMPLE - SELECT column, another_column, …
+          FROM mytable
+          INNER/LEFT/RIGHT/FULL JOIN another_table 
+              ON mytable.id = another_table.matching_id
+          WHERE condition(s)
+          ORDER BY column, … ASC/DESC
+          LIMIT num_limit OFFSET num_offset;
 
 
 
+**AGGREGATE FUNCTION** - SUM,COUNT, MIN MAX
+EXAMPLE - SELECT AGG_FUNC(column_or_expression) AS aggregate_description, …
+          FROM mytable
+          WHERE constraint_expression
+          GROUP BY column;
 
+
+**QUERY ORDER OF EXECUTION**
+1- FROM and JOINs
+2- WHERE
+3- GROUP BY
+4- HAVING
+5- SELECT
+6- DISTINCT  //OPTIONAL
+7- ORER BY
+8- LIMIT OFFSET
+
+
+**************************** **DML COMMANDS** ************************************
+
+
+**INSERTING ROWS**
+INSERT INTO mytable
+(column, another_column, …)          //OPTIONAL
+VALUES (value_or_expr, another_value_or_expr, …),
+      (value_or_expr_2, another_value_or_expr_2, …),
+      …;
+
+**UPDATING ROWS**
+UPDATE mytable
+SET column = value_or_expr, 
+    other_column = another_value_or_expr, 
+    …
+WHERE condition;
+
+**DELETING ROWS**
+DELETE FROM mytable
+WHERE condition;
+
+_IT IS RECOMMENDED TO run the constraint in a SELECT query first to ensure that you are removing the right rows_
 
 
 
