@@ -4,3 +4,5 @@
   SELECT * FROM users WHERE email IS NULL;
   IS NOT NULL: Filters for rows with actual data.
   SELECT * FROM users WHERE email IS NOT NULL;
+
+-To count the number of characters in a particular column (cell) we use char_length(content) and not count(content)
