@@ -100,7 +100,15 @@ CREATE TABLE IF NOT EXISTS mytable (
     …
 );
 
+**ADDING COLUMNS**
+ALTER TABLE mytable
+ADD column DataType OptionalTableConstraint 
+    DEFAULT default_value;
 
+
+**DELETING COLUMN**
+ALTER TABLE mytable
+DROP column_to_be_deleted;
 
 
 
