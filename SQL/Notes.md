@@ -93,6 +93,15 @@ WHERE condition;
 
 _IT IS RECOMMENDED TO run the constraint in a SELECT query first to ensure that you are removing the right rows_
 
+**CREATE TABLE**
+CREATE TABLE IF NOT EXISTS mytable (
+    column DataType TableConstraint DEFAULT default_value,
+    another_column DataType TableConstraint DEFAULT default_value,
+    …
+);
+
+
+
 
 
 
