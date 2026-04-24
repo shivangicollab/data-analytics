@@ -50,6 +50,11 @@ EXAMPLE - SELECT column, another_column, …
           ORDER BY column, … ASC/DESC
           LIMIT num_limit OFFSET num_offset;
 
+**SELF JOIN**
+Join used to connect table to itself
+SELECT column_name(s)
+FROM table1 T1, table1 T2      //T1 and T2 are alliases of the same table to be used
+WHERE condition;
 
 
 **AGGREGATE FUNCTION** - SUM,COUNT, MIN MAX
