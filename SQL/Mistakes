@@ -16,4 +16,27 @@
   GROUP BY something
   COUNT(X.id)
 
+24/04/26
+- I cannot do (Date-1) to compare 2 dates. There are other functions DATE_SUB(allias.date, INTERVAL 1 DAY) DATE_ADD(allias.date, INTERVAL 1 DAY) to acess yesterday and tomorrow
+-FROM WEATHER A JOIN WEATHER B is same as FROM WEATHER AS A JOIN WEATHER AS B.
+  Once the alliases are formed I cannot use weather.id , use A.id
+-ON is used as the criteria to join the table and WHERE is used to filter the data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
